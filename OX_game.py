@@ -112,6 +112,10 @@ class game():
                 print("Use these sumbols ?")
                 ask_symbol = input("[Yes/No] : ")
                 asksymbol = ask_symbol.lower()
+                if asksymbol=="exit" or asksymbol=="q":
+                    exit()
+                else:
+                    pass
                 y_s = asksymbol.find("y")
                 if y_s!=-1:
                     y_s = True
@@ -149,6 +153,10 @@ class game():
                     g.one_second_delay()
                 ask_1 = input("Method ")
                 ask1 = ask_1.lower()
+                if ask1=="exit" or ask1=="q":
+                    exit()
+                else:
+                    pass
                 confirmation_1 = ask1.find("1")
                 confirmation_2 = ask1.find("f")
                 if confirmation_1!=-1:
@@ -171,6 +179,10 @@ class game():
                             g.one_second_delay()
                         ask_2 = input("[ O / X ] : ")
                         ask2 = ask_2.lower()
+                        if ask2=="exit" or ask2=="q":
+                            exit()
+                        else:
+                            pass
                         o = ask2.find('o')
                         x = ask2.find('x')
                         if o!=-1:
@@ -236,6 +248,10 @@ class game():
                 print("Use these sumbols ?")
                 ask_symbol = input("[Yes/No] : ")
                 asksymbol = ask_symbol.lower()
+                if asksymbol=="exit" or asksymbol=="q":
+                    exit()
+                else:
+                    pass
                 y_s = asksymbol.find("y")
                 if y_s!=-1:
                     y_s = True
@@ -273,6 +289,10 @@ class game():
                     g.one_second_delay()
                 ask_1 = input("Method ")
                 ask1 = ask_1.lower()
+                if ask1=="exit" or ask1=="q":
+                    exit()
+                else:
+                    pass
                 confirmation_1 = ask1.find("1")
                 confirmation_2 = ask1.find("2")
                 if confirmation_2!=-1:
@@ -294,6 +314,10 @@ class game():
                             g.one_second_delay()
                         ask_2 = input("[ O / X ] : ")
                         ask2 = ask_2.lower()
+                        if ask2=="exit" or ask2=="q":
+                            exit()
+                        else:
+                            pass
                         o = ask2.find('o')
                         x = ask2.find('x')
                         if o!=-1:
@@ -480,6 +504,10 @@ class game():
         else:
             ask_1 = input("Need assistance ? [Y/n] : ")
             ask1 = ask_1.lower()
+            if ask1=="exit" or ask1=="q":
+                exit()
+            else:
+                pass
             y = ask1.find("y")
             n = ask1.find("n")
             if y!=-1:
@@ -576,6 +604,10 @@ class game():
         else:
             ask_1 = input("Need assistance ? [Y/n] : ")
             ask1 = ask_1.lower()
+            if ask1=="exit" or ask1=="q":
+                exit()
+            else:
+                pass
             y = ask1.find("y")
             n = ask1.find("n")
             if y!=-1:
@@ -644,6 +676,10 @@ class game():
                 print("Do you want to read the rules ?")
                 ask_1 = input("[Yes/No] : ")
                 ask1 = ask_1.lower()
+                if ask1=="exit" or ask1=="q":
+                    exit()
+                else:
+                    pass
                 y1 = ask1.find('y')
                 if y1!=-1:
                     y1 = True
@@ -685,6 +721,10 @@ class game():
                 print("Do you want to read the rules ?")
                 ask_1 = input("[Yes/No] : ")
                 ask1 = ask_1.lower()
+                if ask1=="exit" or ask1=="q":
+                    exit()
+                else:
+                    pass
                 y1 = ask1.find('y')
                 if y1!=-1:
                     y1 = True
@@ -798,6 +838,10 @@ class game():
                             print(g.blank)
                             g.sheet_printer()
                             temp = input(f"{g.Player_name}'s Chance (Type the number of block) : ")
+                            if temp=="exit" or temp=="q":
+                                exit()
+                            else:
+                                pass
                             g.one_second_delay()
                             error = g.temp_error_finder(temp)
                             if error!=0:
@@ -861,6 +905,12 @@ class game():
                                     break
                                 elif n1!=-1:
                                     loop_play = False
+                                    ask2 = input("Exit ? [Y/N] : ")
+                                    ask2.lower()
+                                    if ask2=="exit" or ask2=="q":
+                                        exit()
+                                    else:
+                                        pass
                                     break
                                 else:
                                     print("Type again.")
@@ -898,6 +948,10 @@ class game():
                                 ask_1 = input("Play again ? [Yes/No] : ")
                                 g.one_second_delay()
                                 ask1 = ask_1.lower()
+                                if ask1=="exit" or ask1=="q":
+                                    exit()
+                                else:
+                                    pass
                                 y1 = ask1.find("y")
                                 n1 = ask1.find("n")
                                 if y1!=-1:
@@ -905,6 +959,12 @@ class game():
                                     break
                                 elif n1!=-1:
                                     loop_play = False
+                                    ask2 = input("Exit ? [Y/N] : ")
+                                    ask2.lower()
+                                    if ask2=="exit" or ask2=="q":
+                                        exit()
+                                    else:
+                                        pass
                                     break
                                 else:
                                     print("Type again.")
@@ -938,6 +998,10 @@ class game():
                                 ask_1 = input("Play again ? [Yes/No] : ")
                                 g.one_second_delay()
                                 ask1 = ask_1.lower()
+                                if ask1=="exit" or ask1=="q":
+                                    exit()
+                                else:
+                                    pass
                                 y1 = ask1.find("y")
                                 n1 = ask1.find("n")
                                 if y1!=-1:
@@ -945,6 +1009,12 @@ class game():
                                     break
                                 elif n1!=-1:
                                     loop_play = False
+                                    ask2 = input("Exit ? [Y/N] : ")
+                                    ask2.lower()
+                                    if ask2=="exit" or ask2=="q":
+                                        exit()
+                                    else:
+                                        pass
                                     break
                                 else:
                                     print("Type again.")
@@ -974,6 +1044,10 @@ class game():
                                 ask_1 = input("Play again ? [Yes/No] : ")
                                 g.one_second_delay()
                                 ask1 = ask_1.lower()
+                                if ask1=="exit" or ask1=="q":
+                                    exit()
+                                else:
+                                    pass
                                 y1 = ask1.find("y")
                                 n1 = ask1.find("n")
                                 if y1!=-1:
@@ -981,6 +1055,12 @@ class game():
                                     break
                                 elif n1!=-1:
                                     loop_play = False
+                                    ask2 = input("Exit ? [Y/N] : ")
+                                    ask2.lower()
+                                    if ask2=="exit" or ask2=="q":
+                                        exit()
+                                    else:
+                                        pass
                                     break
                                 else:
                                     print("Type again.")
@@ -1015,6 +1095,10 @@ class game():
                                                                     ask_1 = input("Play again ? [Yes/No] : ")
                                                                     g.one_second_delay()
                                                                     ask1 = ask_1.lower()
+                                                                    if ask1=="exit" or ask1=="q":
+                                                                        exit()
+                                                                    else:
+                                                                        pass
                                                                     y1 = ask1.find("y")
                                                                     n1 = ask1.find("n")
                                                                     if y1!=-1:
@@ -1022,6 +1106,10 @@ class game():
                                                                         break
                                                                     elif n1!=-1:
                                                                         loop_play = False
+                                                                        if ask2=="exit" or ask2=="q":
+                                                                            exit()
+                                                                        else:
+                                                                            pass
                                                                         break
                                                                     else:
                                                                         print("Type again.")
@@ -1094,6 +1182,10 @@ class game():
                             print(g.blank)
                             g.sheet_printer()
                             temp = input(f"{g.P2_name}'s Chance (Type the number of block) : ")
+                            if temp=="exit" or temp=="q":
+                                exit()
+                            else:
+                                pass
                             g.one_second_delay()
                             error = g.temp_error_finder(temp)
                             if error!=0:
@@ -1140,6 +1232,10 @@ class game():
                                 ask_1 = input("Play again ? [Yes/No] : ")
                                 g.one_second_delay()
                                 ask1 = ask_1.lower()
+                                if ask1=="exit" or ask1=="q":
+                                    exit()
+                                else:
+                                    pass
                                 y1 = ask1.find("y")
                                 n1 = ask1.find("n")
                                 if y1!=-1:
@@ -1147,6 +1243,8 @@ class game():
                                     break
                                 elif n1!=-1:
                                     loop_play = False
+                                    ask2 = input("Exit ? [Y/N] : ")
+                                    ask2.lower()
                                     break
                                 else:
                                     print("Type again.")
@@ -1184,6 +1282,10 @@ class game():
                                 ask_1 = input("Play again ? [Yes/No] : ")
                                 g.one_second_delay()
                                 ask1 = ask_1.lower()
+                                if ask1=="exit" or ask1=="q":
+                                    exit()
+                                else:
+                                    pass
                                 y1 = ask1.find("y")
                                 n1 = ask1.find("n")
                                 if y1!=-1:
@@ -1191,6 +1293,12 @@ class game():
                                     break
                                 elif n1!=-1:
                                     loop_play = False
+                                    ask2 = input("Exit ? [Y/N] : ")
+                                    ask2.lower()
+                                    if ask2=="exit" or ask2=="q":
+                                        exit()
+                                    else:
+                                        pass
                                     break
                                 else:
                                     print("Type again.")
@@ -1224,6 +1332,10 @@ class game():
                                 ask_1 = input("Play again ? [Yes/No] : ")
                                 g.one_second_delay()
                                 ask1 = ask_1.lower()
+                                if ask1=="exit" or ask1=="q":
+                                    exit()
+                                else:
+                                    pass
                                 y1 = ask1.find("y")
                                 n1 = ask1.find("n")
                                 if y1!=-1:
@@ -1231,6 +1343,12 @@ class game():
                                     break
                                 elif n1!=-1:
                                     loop_play = False
+                                    ask2 = input("Exit ? [Y/N] : ")
+                                    ask2.lower()
+                                    if ask2=="exit" or ask2=="q":
+                                        exit()
+                                    else:
+                                        pass
                                     break
                                 else:
                                     print("Type again.")
@@ -1260,6 +1378,10 @@ class game():
                                 ask_1 = input("Play again ? [Yes/No] : ")
                                 g.one_second_delay()
                                 ask1 = ask_1.lower()
+                                if ask1=="exit" or ask1=="q":
+                                    exit()
+                                else:
+                                    pass
                                 y1 = ask1.find("y")
                                 n1 = ask1.find("n")
                                 if y1!=-1:
@@ -1267,6 +1389,12 @@ class game():
                                     break
                                 elif n1!=-1:
                                     loop_play = False
+                                    ask2 = input("Exit ? [Y/N] : ")
+                                    ask2.lower()
+                                    if ask2=="exit" or ask2=="q":
+                                        exit()
+                                    else:
+                                        pass
                                     break
                                 else:
                                     print("Type again.")
@@ -1301,6 +1429,10 @@ class game():
                                                                     ask_1 = input("Play again ? [Yes/No] : ")
                                                                     g.one_second_delay()
                                                                     ask1 = ask_1.lower()
+                                                                    if ask1=="exit" or ask1=="q":
+                                                                        exit()
+                                                                    else:
+                                                                        pass
                                                                     y1 = ask1.find("y")
                                                                     n1 = ask1.find("n")
                                                                     if y1!=-1:
@@ -1308,6 +1440,12 @@ class game():
                                                                         break
                                                                     elif n1!=-1:
                                                                         loop_play = False
+                                                                        ask2 = input("Exit ? [Y/N] : ")
+                                                                        ask2.lower()
+                                                                        if ask2=="exit" or ask2=="q":
+                                                                            exit()
+                                                                        else:
+                                                                            pass
                                                                         break
                                                                     else:
                                                                         print("Type again.")
@@ -2330,6 +2468,10 @@ class game():
             game.one_second_delay()
             undecided_game_mode_ = input("Type : ")
             undecided_game_mode = undecided_game_mode_.lower()
+            if undecided_game_mode=="exit" or undecided_game_mode=="q":
+                exit()
+            else:
+                pass
             computer_player_deciding_1 = undecided_game_mode.find("c")
             computer_player_deciding_2 = undecided_game_mode.find("o")
             computer_player_deciding_3 = undecided_game_mode.find("m")
@@ -2590,6 +2732,10 @@ class game():
                         else:
                             print(g.blank)
                         temp_1 = input("Player-1 name : ")
+                        if temp_1=="exit" or temp_1=="q":
+                            exit()
+                        else:
+                            pass
                         if assistance==True:
                             print("Checking whether the name is in the limits told before.")
                         else:
@@ -2613,6 +2759,10 @@ class game():
                             print(f"Player-1 name : {temp_1}")
                             ask_1 = input("confirm ? [Yes or RETURN / No] : ")
                             ask1 = ask_1.lower()
+                            if ask1=="exit" or ask1=="q":
+                                exit()
+                            else:
+                                pass
                             y1 = ask1.find('y')
                             if ask_1=="":
                                 g.P1_name = temp_1
@@ -2658,6 +2808,10 @@ class game():
                             print(f"Player-2 name : {temp_2}")
                             ask_2 = input("confirm ? [Yes or RETURN / No] : ")
                             ask2 = ask_2.lower()
+                            if ask2=="exit" or ask2=="q":
+                                exit()
+                            else:
+                                pass
                             y2 = ask2.find('y')
                             if ask_2=="":
                                 g.P2_name = temp_2
@@ -2683,6 +2837,10 @@ class game():
                         g.one_second_delay()
                         ask_1 = input("[Yes/No] : ")
                         ask1 = ask_1.lower()
+                        if ask1=="exit" or ask1=="q":
+                            exit()
+                        else:
+                            pass
                         y1 = ask1.find('y')
                         if y1!=-1:
                             y1 = True
@@ -2699,6 +2857,10 @@ class game():
                             print("Or leave blank[ENTER/RETURN] to use the old name.")
                             g.one_second_delay()
                             temp_1 = input("Player-1 name : ")
+                            if temp_1=="exit" or temp_1=="q":
+                                exit()
+                            else:
+                                pass
                             if temp_1=="":
                                 pass
                             else:
@@ -2725,6 +2887,10 @@ class game():
                                     print(f"Player-1 name : {temp_1}")
                                     ask_1 = input("confirm ? [Yes or RETURN / No] : ")
                                     ask1 = ask_1.lower()
+                                    if ask1=="exit" or ask1=="q":
+                                        exit()
+                                    else:
+                                        pass
                                     y1 = ask1.find('y')
                                     if ask_1=="":
                                         g.P1_name = temp_1
@@ -2746,6 +2912,10 @@ class game():
                             print("Or leave blank[ENTER/RETURN] to use the old name.")
                             g.one_second_delay()
                             temp_2 = input("Player-2 name : ")
+                            if temp_2=="exit" or temp_2=="q":
+                                exit()
+                            else:
+                                pass
                             if temp_2=="":
                                 pass
                             else:
@@ -2772,6 +2942,10 @@ class game():
                                     print(f"Player-2 name : {temp_2}")
                                     ask_2 = input("confirm ? [Yes or RETURN / No] : ")
                                     ask2 = ask_2.lower()
+                                    if ask2=="exit" or ask2=="q":
+                                        exit()
+                                    else:
+                                        pass
                                     y2 = ask2.find('y')
                                     if ask_2=="":
                                         g.P2_name = temp_2
@@ -2797,6 +2971,10 @@ class game():
                     g.one_second_delay()
                     while 1==1:
                         reset_1 = input("Do you want to reset it ? \n[Yes/No] : ")
+                        if reset_1=="exit" or reset_1=="q":
+                            exit()
+                        else:
+                            pass
                         y1 = reset_1.find('y')
                         n1 = reset_1.find('n')
                         if y1!=-1:
@@ -2820,6 +2998,10 @@ class game():
                         g.one_second_delay()
                         while 1==1:
                             temp_2 = input("Player-2 name : ")
+                            if temp_2=="exit" or temp_2=="q":
+                                exit()
+                            else:
+                                pass
                             if assistance==True:
                                 print("Checking whether the name is in the limits told before.")
                             else:
@@ -2845,6 +3027,10 @@ class game():
                                 print(f"Player-2 name : {temp_2}")
                                 ask_1 = input("confirm ? [Yes or RETURN / No] : ")
                                 ask1 = ask_1.lower()
+                                if ask1=="exit" or ask1=="q":
+                                    exit()
+                                else:
+                                    pass
                                 y2 = ask1.find('y')
                                 if ask_1=="":
                                     g.P2_name = temp_2
@@ -2867,6 +3053,10 @@ class game():
                     g.one_second_delay()
                     while 1==1:
                         reset_1 = input("Do you want to reset it ? \n[Yes/No] : ")
+                        if reset_1=="exit" or reset_1=="q":
+                            exit()
+                        else:
+                            pass
                         y1 = reset_1.find('y')
                         n1 = reset_1.find('n')
                         if y1!=-1:
@@ -2890,6 +3080,10 @@ class game():
                         g.one_second_delay()
                         while 1==1:
                             temp_1 = input("Player-1 name : ")
+                            if temp_1=="exit" or temp_1=="q":
+                                exit()
+                            else:
+                                pass
                             if assistance==True:
                                 print("Checking whether the name is in the limits told before.")
                             else:
@@ -2915,6 +3109,10 @@ class game():
                                 print(f"Player-1 name : {temp_1}")
                                 ask_1 = input("confirm ? [Yes or RETURN / No] : ")
                                 ask1 = ask_1.lower()
+                                if ask1=="exit" or ask1=="q":
+                                    exit()
+                                else:
+                                    pass
                                 y2 = ask1.find('y')
                                 if ask_1=="":
                                     g.P1_name = temp_1
@@ -2967,6 +3165,10 @@ class game():
                         print(name_5)
                         g.one_second_delay()
                         temp_1 = input("Type : ")
+                        if temp_1=="exit" or temp_1=="q":
+                            exit()
+                        else:
+                            pass
                         if len(temp_1)==1:
                             if temp_1=="1":
                                 g.Computer_name = "C.P.U."
@@ -3031,6 +3233,10 @@ class game():
                                 print(f"Computer's name : {temp_1}")
                                 ask_1 = input("confirm ? [Yes or RETURN / No] : ")
                                 ask1 = ask_1.lower()
+                                if ask1=="exit" or ask1=="q":
+                                    exit()
+                                else:
+                                    pass
                                 y1 = ask1.find('y')
                                 if ask_1=="":
                                     g.Computer_name = temp_1
@@ -3051,6 +3257,10 @@ class game():
                         g.one_second_delay()
                         g.one_second_delay()
                         temp_2 = input("Type : ")
+                        if temp_2=="exit" or temp_2=="q":
+                            exit()
+                        else:
+                            pass
                         if assistance==True:
                             print("Checking whether the name is in the limits told before.")
                             g.one_second_delay()
@@ -3075,6 +3285,10 @@ class game():
                             print(f"Player's name : {temp_2}")
                             ask_2 = input("confirm ? [Yes or RETURN / No] : ")
                             ask2 = ask_2.lower()
+                            if ask2=="exit" or ask2=="q":
+                                exit()
+                            else:
+                                pass
                             y2 = ask2.find('y')
                             if ask_2=="":
                                 g.Player_name = temp_2
@@ -3103,6 +3317,10 @@ class game():
                         g.one_second_delay()
                         ask_1 = input("[Yes/No] : ")
                         ask1 = ask_1.lower()
+                        if ask1=="exit" or ask1=="q":
+                            exit()
+                        else:
+                            pass
                         y1 = ask1.find('y')
                         if y1!=-1:
                             y1 = True
@@ -3119,6 +3337,10 @@ class game():
                             print("Or leave blank[ENTER/RETURN] to use old name.")
                             g.one_second_delay()
                             temp_1 = input("Player-1 name : ")
+                            if temp_1=="exit" or temp_1=="q":
+                                exit()
+                            else:
+                                pass
                             if temp_1=="":
                                 pass
                             else:
@@ -3146,6 +3368,10 @@ class game():
                                     print(f"Player's name : {g.Player_name}")
                                     ask_1 = input("confirm ? [Yes or RETURN / No] : ")
                                     ask1 = ask_1.lower()
+                                    if ask1=="exit" or ask1=="q":
+                                        exit()
+                                    else:
+                                        pass
                                     y1 = ask1.find('y')
                                     if ask_1=="":
                                         g.Player_name = temp_1
@@ -3174,6 +3400,10 @@ class game():
                             print(name_5)
                             g.one_second_delay()
                             temp_2 = input("Type : ")
+                            if temp_2=="exit" or temp_2=="q":
+                                exit()
+                            else:
+                                pass
                             if len(temp_2)==1:
                                 if temp_2=="1":
                                     g.Computer_name = "C.P.U."
@@ -3238,6 +3468,10 @@ class game():
                                     print(f"Computer's name : {temp_2}")
                                     ask_2 = input("confirm ? [Yes or RETURN / No] : ")
                                     ask2 = ask_2.lower()
+                                    if ask2=="exit" or ask2=="q":
+                                        exit()
+                                    else:
+                                        pass
                                     y2 = ask2.find('y')
                                     if ask_2=="":
                                         g.Computer_name = temp_2
@@ -3264,6 +3498,10 @@ class game():
                     g.one_second_delay()
                     while 1==1:
                         reset_1 = input("Do you want to reset it ? \n[Yes/No] : ")
+                        if reset_1=="exit" or reset_1=="q":
+                            exit()
+                        else:
+                            pass
                         y1 = reset_1.find('y')
                         n1 = reset_1.find('n')
                         if y1!=-1:
@@ -3296,6 +3534,10 @@ class game():
                             print(name_5)
                             g.one_second_delay()
                             temp_1 = input("Type : ")
+                            if temp_1=="exit" or temp_1=="q":
+                                exit()
+                            else:
+                                pass
                             if len(temp_1)==1:
                                 if temp_1=="1":
                                     g.Computer_name = "C.P.U."
@@ -3359,6 +3601,10 @@ class game():
                                     print(f"Computer's name : {temp_1}")
                                     ask_1 = input("confirm ? [Yes or RETURN / No] : ")
                                     ask1 = ask_1.lower()
+                                    if ask1=="exit" or ask1=="q":
+                                        exit()
+                                    else:
+                                        pass
                                     y1 = ask1.find('y')
                                     if ask_1=="":
                                         g.Computer_name = temp_1
@@ -3381,6 +3627,10 @@ class game():
                         while 1==1:
                             print(g.blank)
                             temp_2 = input("Player's name : ")
+                            if temp_2=="exit" or temp_2=="q":
+                                exit()
+                            else:
+                                pass
                             if assistance==True:
                                 print("Checking whether the name is in the limits told before.")
                                 g.one_second_delay()
@@ -3405,6 +3655,10 @@ class game():
                                 print(f"Player's name : {g.Player_name}")
                                 ask_1 = input("confirm ? [Yes or RETURN / No] : ")
                                 ask1 = ask_1.lower()
+                                if ask1=="exit" or ask1=="q":
+                                    exit()
+                                else:
+                                    pass
                                 y1 = ask1.find('y')
                                 if ask_1=="":
                                     g.Player_name = temp_2
@@ -3436,6 +3690,10 @@ class game():
                             print(name_5)
                             g.one_second_delay()
                             temp_1 = input("Type : ")
+                            if temp_1=="exit" or temp_1=="q":
+                                exit()
+                            else:
+                                pass
                             if len(temp_1)==1:
                                 if temp_1=="1":
                                     g.Computer_name = "C.P.U."
@@ -3499,6 +3757,10 @@ class game():
                                     print(f"Computer's name : {temp_1}")
                                     ask_1 = input("confirm ? [Yes or RETURN / No] : ")
                                     ask1 = ask_1.lower()
+                                    if ask1=="exit" or ask1=="q":
+                                        exit()
+                                    else:
+                                        pass
                                     y1 = ask1.find('y')
                                     if ask_1=="":
                                         g.Computer_name = temp_1
@@ -3522,6 +3784,10 @@ class game():
                     print(f"Computer's name : {g.Computer_name}")
                     while 1==1:
                         reset_1 = input("Do you want to reset it ? \n[Yes/No] : ")
+                        if reset_1=="exit" or reset_1=="q":
+                            exit()
+                        else:
+                            pass
                         y1 = reset_1.find('y')
                         n1 = reset_1.find('n')
                         if y1!=-1:
@@ -3552,6 +3818,10 @@ class game():
                             print(name_5)
                             g.one_second_delay()
                             temp_1 = input("Type : ")
+                            if temp_1=="exit" or temp_1=="q":
+                                exit()
+                            else:
+                                pass
                             if len(temp_1)==1:
                                 if temp_1=="1":
                                     g.Computer_name = "C.P.U."
@@ -3616,6 +3886,10 @@ class game():
                                     print(f"Computer's name : {temp_1}")
                                     ask_1 = input("confirm ? [Yes or RETURN / No] : ")
                                     ask1 = ask_1.lower()
+                                    if ask1=="exit" or ask1=="q":
+                                        exit()
+                                    else:
+                                        pass
                                     y1 = ask1.find('y')
                                     if ask_1=="":
                                         g.Computer_name = temp_1
@@ -3659,6 +3933,10 @@ class game():
                                 print(f"Player's name : {temp_2}")
                                 ask_2 = input("confirm ? [Yes or RETURN / No] : ")
                                 ask2 = ask_2.lower()
+                                if ask2=="exit" or ask2=="q":
+                                    exit()
+                                else:
+                                    pass
                                 y2 = ask2.find('y')
                                 if ask_2=="":
                                     g.Player_name = temp_2
@@ -3730,6 +4008,10 @@ class game():
             ask_1 = input("Method ")
             g.one_second_delay()
             ask1 = ask_1.lower()
+            if ask1=="exit" or ask1=="q":
+                exit()
+            else:
+                pass
             conformation_1 = ask1.find("1")
             confirmation_2 = ask1.find("f")
             if conformation_1!=-1:
@@ -3748,6 +4030,10 @@ class game():
                     g.one_second_delay()
                     ask_2 = input("Player-")
                     ask2 = ask_2.lower()
+                    if ask2=="exit" or ask2=="q":
+                        exit()
+                    else:
+                        pass
                     if ask2=="1":
                         return "Player-1"
                     elif ask2=="2":
@@ -3962,4 +4248,4 @@ class game():
             g.C_streak = 0
             g.Chance_of_1 = ""
             g.Total_1_player_matches = 0
-print("Type 'game.main_game_starter()' to start the game.")
+print("Type 'game.main_game_starter() to start the game.)
